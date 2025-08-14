@@ -1,0 +1,63 @@
+:root {
+    /* Light theme (default) */
+    --background-primary: #f8fafc;
+    /* slate-50 */
+    --background-secondary: #ffffff;
+    /* white */
+    --background-hover: #e2e8f0;
+    /* slate-200 */
+
+    --border-color: #cbd5e1;
+    /* slate-300 */
+    --border-color-light: #e2e8f0;
+    /* slate-200 */
+
+    --text-primary: #0f172a;
+    /* slate-900 */
+    --text-secondary: #1e293b;
+    /* slate-800 */
+    --text-muted: #64748b;
+    /* slate-500 */
+
+    --accent-primary: #4f46e5;
+    /* indigo-600 */
+    --accent-secondary: #6366f1;
+    /* indigo-500 */
+    --accent-hover: #4338ca;
+    /* indigo-700 */
+}
+
+/* Dark theme */
+[data-theme='dark'] {
+    --background-primary: #1e293b;
+    /* slate-800 */
+    --background-secondary: #0f172a;
+    /* slate-900 */
+    --background-hover: #334155;
+    /* slate-700 */
+
+    --border-color: #334155;
+    /* slate-700 */
+    --border-color-light: #475569;
+    /* slate-600 */
+
+    --text-primary: #f1f5f9;
+    /* slate-100 */
+    --text-secondary: #cbd5e1;
+    /* slate-300 */
+    --text-muted: #94a3b8;
+    /* slate-400 */
+
+    --accent-primary: #6366f1;
+    /* indigo-500 */
+    --accent-secondary: #818cf8;
+    /* indigo-400 */
+    --accent-hover: #4f46e5;
+    /* indigo-600 */
+}
+
+/* Optional: Add some base styles */
+body {
+    background-color: var(--background-primary);
+    color: var(--text-primary);
+}

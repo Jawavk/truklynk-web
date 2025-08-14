@@ -1,0 +1,54 @@
+{
+  "compilerOptions": {
+    /* Project Settings */
+    "composite": true, // Enable project compilation caching for speed
+    "tsBuildInfoFile": "./node_modules/.cache/tsconfig.node.tsbuildinfo", // Cache build info in a cleaner location
+    /* Language Features */
+    "target": "ES2022", // Target the latest stable ECMAScript version
+    "lib": [
+      "ES2023"
+    ], // Include ES2023 for modern APIs
+    /* Module Settings */
+    "module": "ESNext", // Use ESNext for Vite compatibility
+    "moduleResolution": "bundler", // Resolve modules using bundler-friendly mode
+    "moduleDetection": "force", // Enforce explicit module style
+    "allowImportingTsExtensions": true, // Allow importing TypeScript files with extensions
+    "resolveJsonModule": true, // Allow importing JSON files as modules
+    /* Type Checking */
+    "strict": true, // Enable all strict type-checking options
+    "noUnusedLocals": true, // Report unused local variables
+    "noUnusedParameters": true, // Report unused function parameters
+    "noFallthroughCasesInSwitch": true, // Disallow fallthrough in switch cases
+    "isolatedModules": true, // Ensure each file is treated as an independent module
+    /* Linting and Safety */
+    "forceConsistentCasingInFileNames": true, // Enforce consistent casing in imports
+    "skipLibCheck": true, // Skip checking `.d.ts` files for performance
+    /* Debugging */
+    "sourceMap": true, // Generate source maps for debugging
+    "inlineSourceMap": false, // Use separate source map files for easier debugging
+    "inlineSources": true, // Include original source code in the source maps
+    /* Emission */
+    "noEmit": true, // Disable emitting compiled files
+    "useDefineForClassFields": true, // Use ES standard for class fields
+    /* Developer Experience */
+    "types": [
+      "vite/client"
+    ], // Include Vite-specific types for better DX
+    "baseUrl": ".", // Enable relative imports from project root
+    "paths": {
+      "@/*": [
+        "src/*"
+      ] // Alias `@/` to the `src` directory for clean imports
+    },
+    /* Experimental */
+    "experimentalDecorators": true, // Enable experimental decorators (if needed)
+    "emitDecoratorMetadata": false // Emit metadata for decorators (disable if not needed)
+  },
+  "include": [
+    "vite.config.ts" // Ensure only `vite.config.ts` is included
+  ],
+  "exclude": [
+    "node_modules", // Exclude `node_modules` from type checking
+    "dist" // Exclude build output
+  ]
+}

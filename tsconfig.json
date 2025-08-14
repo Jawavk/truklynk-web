@@ -1,0 +1,88 @@
+{
+  "compilerOptions": {
+    /* Target modern JavaScript features */
+    "target": "ES2022", // Use ES2022 for latest language features
+    /* Libraries to include in the compilation */
+    "lib": [
+      "ES2022",
+      "DOM",
+      "DOM.Iterable"
+    ],
+    /* Specify the module system */
+    "module": "ESNext", // Use ESNext for compatibility with modern bundlers
+    /* Resolving modules */
+    "moduleResolution": "bundler", // Resolve modules using bundler defaults
+    "baseUrl": "./", // Enable base URL for easier path mapping
+    "paths": {
+      "@/*": [
+        "src/*"
+      ],
+      "@assets/*": [
+        "src/assets/*"
+      ],
+      "@components/*": [
+        "src/components/*"
+      ],
+      "@pages/*": [
+        "src/pages/*"
+      ],
+      "@styles/*": [
+        "src/styles/*"
+      ],
+      "@utils/*": [
+        "src/utils/*"
+      ]
+    },
+    /* TypeScript extensions */
+    "allowImportingTsExtensions": true, // Allow importing TypeScript files with extensions
+    /* JSX and React options */
+    "jsx": "react-jsx", // Use React's JSX runtime
+    "jsxImportSource": "react", // Specify React as the JSX factory
+    /* Strict type checking */
+    "strict": true, // Enable all strict type-checking options
+    "noImplicitAny": false, // Warn on variables without explicit types
+    "strictBindCallApply": true, // Ensure `call`/`apply` type safety
+    "alwaysStrict": true, // Ensure `use strict` is emitted in JavaScript
+    "noImplicitReturns": true, // Warn on missing `return` statements
+    "noImplicitThis": true, // Warn on `this` usage with an implicit `any` type
+    "useUnknownInCatchVariables": true, // Force explicit typing in `catch` clauses
+    "strictPropertyInitialization": false, // Allow properties to be uninitialized
+
+    /* Prevent common issues */
+    "isolatedModules": true, // Ensure each file is treated as a module
+    "skipLibCheck": true, // Skip type checks for declaration files
+    "noUnusedLocals": false, // Warn on unused local variables
+    "noUnusedParameters": false, // Warn on unused parameters
+    "noFallthroughCasesInSwitch": true, // Prevent fallthrough in switch statements
+    "noUncheckedIndexedAccess": true, // Check for undefined when indexing objects
+    "exactOptionalPropertyTypes": false, // Strict checking for optional property types
+    /* Emit options */
+    "noEmit": true, // Do not emit compiled files
+    "strictNullChecks": true, // Retain strict null checks
+
+    "useDefineForClassFields": true, // Emit `define` calls for class fields
+    /* Module detection */
+    "moduleDetection": "force", // Force explicit module usage
+    /* Debugging and diagnostics */
+    "sourceMap": true, // Generate source maps for debugging
+    "forceConsistentCasingInFileNames": true, // Ensure consistent casing in imports
+    "allowSyntheticDefaultImports": true, // Allow default imports even if module lacks default export
+    "esModuleInterop": true, // Provide compatibility with CommonJS and ES modules
+    /* Additional options for developer experience */
+    "resolveJsonModule": true, // Allow importing `.json` files
+    "incremental": true, // Enable incremental compilation for faster builds
+    "types": [
+      "node"
+    ], // Add types for Vite environment
+    "emitDecoratorMetadata": true, // Support for decorators (if used)
+    "experimentalDecorators": true // Enable experimental decorators
+  },
+  "include": [
+    "src"
+  ], // Include all files in the `src` directory
+  "exclude": [
+    "node_modules",
+    "dist",
+    ".vite"
+  ] // Exclude unnecessary files
+}
